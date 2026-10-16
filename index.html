@@ -8,16 +8,16 @@
 
 </head>
 <body>
-    <div class="container d-flex justify-contennt-center min-vh-100">
+    <div class="container d-flex justify-contennt-center min-vh-100 align-items-center text-lg ">
         <div class="d-flex flex-column">
-            <h1>Password Generator CuyUnivers</h1>
+            <h1>Password Generator </h1>
             <div class="d-flex flex-column gap-2 mt-2">
                 <label for="passwordLength" class="text-uppercase fw-bold">Panjang Password</label>
                 <input type="number" class="from-control from-control-lg" id="passwordLength">
                 <label for="password" class="text-uppercase fw-bold">Password</label>
-                <input type="password" class="from-control from-control-lg" id="password">
-                <button class="btn-solid theme-inverse text-uppercase fw-bold btn-lg mt-2" onclick="generatePassword()">generate password</button>
-                <button class="btn-solid theme-primary text-uppercase fw-bold btn-lg mt-2" onclick="savePassword()"> save password</button>
+                <input class="from-control from-control-lg" id="password" disabled>
+                <button class="btn-solid theme-inverse text-uppercase fw-bold btn-lg mt-2" onclick="getPassword()">generate password</button>
+                <a class="btn-solid theme-primary text-uppercase fw-bold btn-lg mt-2" onclick="savePassword()" id="saveButton"> save password</a>
             </div>
         </div>
     </div>
